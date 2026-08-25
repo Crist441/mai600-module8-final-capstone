@@ -60,6 +60,17 @@ for this project, not as a competing production system.
   first question takes ~2 minutes (embedding the 10-document knowledge base once) and each
   question after that takes ~30-70s (CPU-only generation).
 
+## App Screenshots
+
+Real screenshots of `app/streamlit_app.py` running locally against Ollama (not mockups):
+
+![App home screen](images/app_screenshot_home.png)
+*Home screen: knowledge base list, pipeline info, and the 3 example-question buttons.*
+
+![App answering a compound question](images/app_screenshot_answer.png)
+*A real answer to the compound RAID-vs-RACI question — both required documents retrieved
+(top-4) and a correct, cited answer generated live.*
+
 ## Data / Document Description
 
 `data/sample_documents/` contains 10 fictional, classroom-safe Markdown policy documents (6
