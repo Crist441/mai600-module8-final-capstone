@@ -1,0 +1,11 @@
+test_id,model,embed_model,top_k,response_time_seconds,total_time_seconds,answer_length_characters
+Q1,llama3.2:3b,nomic-embed-text,4,33.64,35.8,261
+Q2,llama3.2:3b,nomic-embed-text,4,57.56,59.74,769
+Q3,llama3.2:3b,nomic-embed-text,4,36.08,38.29,264
+Q4,llama3.2:3b,nomic-embed-text,4,34.9,37.27,280
+Q5,llama3.2:3b,nomic-embed-text,4,42.55,44.78,464
+Q6,llama3.2:3b,nomic-embed-text,4,34.93,37.14,257
+Q7,llama3.2:3b,nomic-embed-text,4,31.1,33.27,299
+Q8,llama3.2:3b,nomic-embed-text,4,39.12,41.42,252
+Q9,llama3.2:3b,nomic-embed-text,4,72.35,74.58,779
+Q10,llama3.2:3b,nomic-embed-text,4,42.08,44.4,331

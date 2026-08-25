@@ -1,0 +1,50 @@
+test_id,question,expected_source,question_type,retrieved_sources,top1_source,generated_answer,response_time_seconds
+Q1,What is a RAID log and what do its four letters stand for?,01_raid_log_reference_guide.md,single,01_raid_log_reference_guide.md;01_raid_log_reference_guide.md;01_raid_log_reference_guide.md;07_vendor_contractor_risk_addendum.md,01_raid_log_reference_guide.md,"A RAID log is a single tracking document used by project managers to record four categories of project information: Risks, Assumptions, Issues, and Dependencies. The four letters in ""RAID"" stand for these categories.
+
+Grounded in: 01_raid_log_reference_guide.md",33.64
+Q2,What is a RACI matrix and what does each of its four roles mean?,02_raci_matrix_reference_guide.md,single,02_raci_matrix_reference_guide.md;02_raci_matrix_reference_guide.md;02_raci_matrix_reference_guide.md;02_raci_matrix_reference_guide.md,02_raci_matrix_reference_guide.md,"A RACI matrix is a role-assignment tool that clarifies who does what on a task or deliverable. Each person or role involved in a task is assigned exactly one of four labels for that task:
+
+* **R — Responsible:** The person who actually performs the work.
+* **A — Accountable:** The person with final decision-making authority and ownership of the outcome. Ideally only one Accountable person per task.
+* **C — Consulted:** People who must be consulted (two-way communication) before the task is finalized, but who do not perform the work or make the final call.
+* **I — Informed:** People who need to be kept up to date (one-way communication) on progress or outcomes, but are not involved in doing or approving the work.
+
+Grounded in: 02_raci_matrix_reference_guide.md",57.56
+Q3,How should a PMO decide which risk to escalate first when comparing probability and impact?,03_risk_probability_impact_framework.md,single,03_risk_probability_impact_framework.md;03_risk_probability_impact_framework.md;05_pmo_risk_management_policy.md;03_risk_probability_impact_framework.md,03_risk_probability_impact_framework.md,"A risk with **Certain or High probability** combined with **High impact** should generally be escalated before a risk with high probability but low/medium impact, or a risk with high impact but low probability.
+
+Grounded in: 03_risk_probability_impact_framework.md",36.08
+Q4,Under what conditions should Apex Process Solutions reject a change request?,04_change_request_decision_model.md,single,04_change_request_decision_model.md;04_change_request_decision_model.md;04_change_request_decision_model.md;07_vendor_contractor_risk_addendum.md,04_change_request_decision_model.md,"Apex Process Solutions should reject a change request when it arrives at the end of the project, implementation is nearly complete, or it threatens the project baseline (schedule, budget, or scope already committed to the client).
+
+Grounded in: 04_change_request_decision_model.md",34.9
+Q5,When must a risk be escalated to the weekly PMO steering review?,05_pmo_risk_management_policy.md,single,05_pmo_risk_management_policy.md;07_vendor_contractor_risk_addendum.md;03_risk_probability_impact_framework.md;08_budget_variance_escalation_policy.md,05_pmo_risk_management_policy.md,"A risk must be escalated to the weekly PMO steering review when any of the following is true:
+
+1. Probability is Certain or High **and** impact is High.
+2. The risk affects the project's ability to meet a client-committed date.
+3. The risk depends on a decision or resource outside the project team's control (a dependency, in RAID-log terms) and no response has been logged within five business days of being raised.
+
+Grounded in: 05_pmo_risk_management_policy.md",42.55
+Q6,"What five things must an escalation note include, in order?",06_pmo_escalation_communication_guide.md,single,06_pmo_escalation_communication_guide.md;06_pmo_escalation_communication_guide.md;05_pmo_risk_management_policy.md;06_pmo_escalation_communication_guide.md,06_pmo_escalation_communication_guide.md,"An escalation note must include the following five things, in this order:
+
+1. Headline
+2. Current status
+3. What is not yet known
+4. Recommended next action
+5. Decision needed from the committee, if any
+
+Grounded in: 06_pmo_escalation_communication_guide.md",34.93
+Q7,"Under the vendor and contractor risk addendum, when must a vendor-caused risk move from the Risk category to the Issue category in the RAID log?",07_vendor_contractor_risk_addendum.md,single,07_vendor_contractor_risk_addendum.md;08_budget_variance_escalation_policy.md;08_budget_variance_escalation_policy.md;07_vendor_contractor_risk_addendum.md,07_vendor_contractor_risk_addendum.md,"A vendor-caused risk must be moved from the **Risk** category to the **Issue** category in the RAID log the moment a committed vendor date is actually missed.
+
+Grounded in: 07_vendor_contractor_risk_addendum.md",49.68
+Q8,"Once a task is confirmed behind baseline, what is the first required step in the schedule slippage response playbook?",09_schedule_slippage_response_playbook.md,single,09_schedule_slippage_response_playbook.md;09_schedule_slippage_response_playbook.md;09_schedule_slippage_response_playbook.md;09_schedule_slippage_response_playbook.md,09_schedule_slippage_response_playbook.md,"The first required step in the schedule slippage response playbook is to ""Confirm, do not assume."" Verify the task is actually behind baseline using the project schedule tool, not a verbal update.
+
+Grounded in: 09_schedule_slippage_response_playbook.md",39.12
+Q9,A team member says the RAID log and the RACI matrix are basically the same tracking tool for a project. Explain what is different between them and reference both documents.,01_raid_log_reference_guide.md;02_raci_matrix_reference_guide.md,compound,02_raci_matrix_reference_guide.md;01_raid_log_reference_guide.md;02_raci_matrix_reference_guide.md;01_raid_log_reference_guide.md,02_raci_matrix_reference_guide.md,"The RAID log and the RACI matrix are not the same tracking tool, although they share some similarities. The main difference lies in their purpose and content.
+
+A RAID log is a single tracking document used to record four categories of project information: Risks, Assumptions, Issues, and Dependencies. Each entry belongs to exactly one of these categories and should include a short description, owner, date raised, current status, and planned response.
+
+On the other hand, a RACI matrix is a role-assignment tool that clarifies who does what on a task or deliverable. It assigns each person or role involved in a task exactly one of four labels: Responsible, Accountable, Consulted, or Informed.
+
+Grounded in: 02_raci_matrix_reference_guide.md and 01_raid_log_reference_guide.md",72.35
+Q10,A vendor missed a delivery date and the resulting rework cost has pushed the project over its approved budget threshold. Explain how this should be logged as a risk and whether it must be escalated under the budget variance policy.,07_vendor_contractor_risk_addendum.md;08_budget_variance_escalation_policy.md,compound,08_budget_variance_escalation_policy.md;07_vendor_contractor_risk_addendum.md;07_vendor_contractor_risk_addendum.md;08_budget_variance_escalation_policy.md,08_budget_variance_escalation_policy.md,"The vendor-caused risk should be logged as a Risk, not yet an Issue, since the date has not passed. Additionally, because the cause is vendor-related and the delay is likely to cause a downstream cost impact (rework hours), it must be escalated to the weekly PMO steering review.
+
+Grounded in: 07_vendor_contractor_risk_addendum.md",42.08

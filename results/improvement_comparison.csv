@@ -1,0 +1,15 @@
+area,module7_prototype,module8_final,evidence
+Knowledge base size,6 documents (28 chunks),10 documents (51 chunks) -- 4 new, deliberately cross-referenced documents added,data/sample_documents/ (07-10 are new)
+Test set size,6 test questions (all single-document),10 test questions (8 single-document + 2 compound),data/test_cases.csv
+Retrieval width,Top-2 chunks,Top-4 chunks -- widened specifically to fix the compound-question failure below,src/rag_pipeline.py (TOP_K)
+Compound-question retrieval,"FAILED (documented in the Module 6 repo): a RAID+RACI question retrieved 2 RACI chunks and 0 RAID chunks at top-2","FIXED: both compound questions in this evaluation set (Q9 RAID+RACI -- the same failing case, re-tested; Q10 vendor+budget -- a new scenario) retrieved chunks from BOTH required documents at top-4",results/retrieved_chunks.csv (Q9, Q10 rows)
+Weakest Module 7 question (Q3),"Completeness 2/5, Helpfulness 2/5 -- vague/circular answer that did not state the actual decision rule","Completeness 5/5, Helpfulness 5/5 -- the same question now states the decision rule directly",results/evaluation_scores.csv (Q3)
+Retrieval hit rate,100% (top-3, 6 easy single-document questions only),100% (top-4, 10 questions incl. 2 previously-failing-class compound questions),results/summary_metrics.json
+Top-1 source match rate,100% (6/6),100% (10/10),results/summary_metrics.json
+Citation match rate,100% (6/6),90% (9/10) -- Q10's compound answer cited only one of its two required sources,results/evaluation_scores.csv (Q10)
+Avg groundedness / format / completeness / helpfulness / accuracy,4.83 / 5.00 / 4.00 / 4.33 / 4.67,4.80 / 4.80 / 4.70 / 4.70 / 4.70,results/summary_metrics.json
+Response time,29.0s average (top-2 context),44.3s average (top-4 context) -- expected cost of wider retrieval, disclosed rather than hidden,results/benchmark_results.csv
+New failure surfaced,Not applicable -- not tested,"Q10: a genuine reasoning error (misapplied the Risk-to-Issue rule to a scenario where the vendor date WAS missed) and an incomplete compound citation -- disclosed, not hidden",results/evaluation_scores.csv (Q10 observation)
+Test-harness quality,Not applicable,"A real bug was found and fixed during this work: an unquoted comma in test_cases.csv corrupted Q7's row (truncating the question sent to the model). Caught by reviewing the raw generated answer, fixed, and re-run -- the corrected Q7 result (5/5 across all dimensions) is what is reported here.",data/test_cases.csv; results/evaluation_scores.csv (Q7 observation)
+Fine-tuning readiness,Real LoRA experiment executed (distilgpt2 + peft) -- RAG chosen as primary approach,Carried forward unchanged -- the decision still holds and did not need to be re-tested,checkpoints/ (unchanged from Module 7)
+Documentation,Progress report + methodology/results drafts,"README, full APA article, AI disclosure, improvement table, all built from this run's real results",README.md / docs/final_article_APA.docx

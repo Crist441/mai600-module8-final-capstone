@@ -1,0 +1,7 @@
+test_id,freeform_note,baseline_topical_relevance,finetuned_topical_relevance,note
+FT1,budget is almost gone and we still have 2 months left on the project,1,4,Baseline talks about an unrelated 2018 product release; fine-tuned mentions budget/delay/target date
+FT2,we've burned through 85% of the budget and there's still two months of work left,2,2,Both generic; fine-tuned did not clearly improve on this one
+FT3,two senior devs just quit we have no backup for the payments module,1,4,Baseline talks about refunds/wallets (unrelated); fine-tuned mentions developers and a payment system
+FT4,lost both senior devs on the payments module this week no one else knows that code,2,4,Baseline is generic bug-report boilerplate; fine-tuned mentions payment modules and developer workflows
+FT5,one of our subcontractors might be in breach of the data handling agreement,2,3,Baseline is a generic liability disclaimer; fine-tuned references the contract directly
+FT6,someone on the team thinks a subcontractor is breaching the data handling agreement,3,3,Baseline invents an unconfirmed $1 million compensation figure (a real hallucination); fine-tuned mentions the contract without fabricating a number
