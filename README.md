@@ -100,11 +100,12 @@ breakdown.
 
 See `ai_usage_disclosure.md`.
 
-## Note on GitHub Submission
+## GitHub Repository
 
-This folder is not yet a pushed GitHub repository. The Windows path to this assignment folder is
-too long for `git` to initialize reliably in place (Windows' path-length limit). A committed local
-git history exists and is ready to push once the project is copied to a shorter path (or a fresh
-`git init` is run after moving/renaming the folder) — see `../mai600-module8-final-capstone-submission.zip`
-in the parent `Submit/` folder for a complete backup copy in the meantime, per the assignment's
-"ZIP file as a backup" allowance.
+**https://github.com/Crist441/mai600-module8-final-capstone**
+
+Note: the Windows path to this assignment folder is too long for `git` to initialize reliably in
+place (Windows' path-length limit), so this repository was built and committed in a short local
+path and pushed to GitHub from there — the files here are identical to what's on GitHub. A
+`mai600-module8-final-capstone-submission.zip` backup also sits in the parent `Submit/` folder,
+per the assignment's "ZIP file as a backup" allowance.
