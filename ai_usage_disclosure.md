@@ -26,7 +26,10 @@ capture the actual retrieved chunks, generated answers, and response times — n
 `results/` is simulated or hand-written; (5) apply the same evaluation rubric Module 7 used
 (retrieval hit, citation match, groundedness, format adherence, completeness, helpfulness,
 accuracy) to score the 10 real generated answers; (6) draft the README, improvement comparison
-table, and the final APA-style article from those real results.
+table, and the final APA-style article from those real results; (7) build the optional
+`app/streamlit_app.py` demo interface (high-code track) so the pipeline can be tried interactively
+instead of only read from CSVs — it calls the same `src/rag_pipeline.py` functions used for the
+real evaluation run, with no separate or simulated logic.
 
 ## Prompts Used
 

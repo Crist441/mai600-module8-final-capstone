@@ -53,6 +53,12 @@ for this project, not as a competing production system.
   `results/`.
 - **Notebook:** `notebooks/module8_final_capstone.ipynb` walks through the same pipeline cell by
   cell with explanations, matching the structure of the Module 7 notebook it extends.
+- **Interactive app (optional, high-code track):** `streamlit run app/streamlit_app.py` opens a
+  chat-style demo in the browser — type a PMO question (or click one of the 3 example buttons,
+  including a compound question) and get a real, cited answer from the same pipeline used for
+  `results/`. Nothing in the app is simulated; every answer is a live call to local Ollama, so the
+  first question takes ~2 minutes (embedding the 10-document knowledge base once) and each
+  question after that takes ~30-70s (CPU-only generation).
 
 ## Data / Document Description
 
